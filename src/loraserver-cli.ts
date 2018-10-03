@@ -24,14 +24,14 @@ var main = async () => {
 		console.log("Logged in");
 
 		//get application list
-		var apps = await api.getApplicationList({ search: "example-app" });
+		var apps = await api.applications.list({ search: "example-app" });
 
 		if (!apps.length) printErrorAndBail("App not found");
 		var app = apps[0];
 		console.log("App Id: " + app.id);
 
 		//get devices list
-		var devs = await api.getDeviceList({ applicationID: app.id, search: "stm32-test-board" });
+		var devs = await api.devices.list({ applicationID: app.id, search: "stm32-test-board" });
 
 		if (!devs.length) printErrorAndBail("Dev not found");
 		var dev = devs[0];
