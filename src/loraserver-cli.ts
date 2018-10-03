@@ -3,7 +3,7 @@ import * as dotenv from "dotenv";
 dotenv.config();
 
 import { ConfigVars } from "./configVars";
-import LoraServerAPI from "./loraserver-api-wrapper";
+import LoraServerAPI from "loraserver-api-client-nodejs";
 
 const printErrorAndBail = (error: any) => {
 	console.error(error);
