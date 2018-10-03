@@ -1,0 +1,37 @@
+{
+  "name": "loraserver-cli",
+  "version": "1.0.0",
+  "description": "loraserver.io CLI app",
+  "main": "bin/loraserver-cli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc",
+    "clean": "rm -rf bin",
+    "start": "npx ts-node ./src/loraserver-cli.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keton/loraserver-cli.git"
+  },
+  "keywords": [
+    "LoRaWAN",
+    "loraserver.io",
+    "cli",
+    "typescript",
+    "nodejs"
+  ],
+  "author": "Michał Lower <https://github.com/keton>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/keton/loraserver-cli/issues"
+  },
+  "homepage": "https://github.com/keton/loraserver-cli#readme",
+  "dependencies": {
+    "@types/dotenv": "^4.0.3",
+    "@types/node": "10.11.0",
+    "dotenv": "^6.0.0",
+    "loraserver-api-client-nodejs": "file:../loraserver-api-client-nodejs",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.1.1"
+  }
+}
